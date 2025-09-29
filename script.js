@@ -36,18 +36,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // 4. Fix the ScrollTrigger animation
   gsap.from(".service-menu-wrapper", {
-  scrollTrigger: {
-    trigger: "#service-menu",
-    start: "top 80%",
-    end: "bottom 15%",
+    scrollTrigger: {
+      trigger: "#service-menu",
+      start: "top 80%",
+      end: "bottom 15%",
 
-    // YEH LINE CHANGE KARNI HAI
-    toggleActions: "restart reset restart reset",
+      // YEH LINE CHANGE KARNI HAI
+      toggleActions: "restart reset restart reset",
 
-    markers: true,
-  },
-  opacity: 0,
-  y: 50,
-  duration: 1,
-});
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+  });
+
+  gsap.from("#philosopy", {
+    scrollTrigger: {
+      trigger: ".left-phil",
+      start: "top 80%",
+      end: "bottom 15%",
+
+      // YEH LINE CHANGE KARNI HAI
+      toggleActions: "restart reset restart reset",
+
+      markers: true,
+    },
+    
+    opacity: 0,
+    x: -100,
+    duration: 1,
+  });
 });
