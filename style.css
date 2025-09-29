@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+:root{
+    --padding-x:2vw;
+}
+*{
+    font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+}
+.main-px{
+    padding-left: var(--padding-x);
+    padding-right: var(--padding-x);
+}
+
+h1{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+.nav-social a i{
+    font-size: 1.3vw;
+}
+.nav-social a i:hover{
+    color: grey;
+}

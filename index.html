@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+
+        <div id="main">
+          <div
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.98),
+                  rgba(0, 0, 0, 0.45),
+                  rgba(0, 0, 0, 0.98)
+                ),
+                url('./images//home-bg.jpg');
+            "
+            id="homepage"
+            class="w-full h-screen bg-cover bg-left text-[#d1d1d1] overflow-hidden"
+          >
+            <nav class="nav relative z-10 px-4 md:px-8 lg:px-12">
+              <div
+                class="nav-top py-4 flex items-center justify-between border-b-[.1px] border-gray-600"
+              >
+                <div
+                  class="nav-social hidden md:flex items-center justify-center gap-4"
+                >
+                  <a href=""><i class="ri-instagram-line"></i></a>
+                  <a href=""><i class="ri-snapchat-line"></i></a>
+                  <a href=""><i class="ri-threads-line"></i></a>
+                  <a href=""><i class="ri-youtube-line"></i></a>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-semibold">Spait</h1>
+                <button
+                  class="font-bold h-full px-4 py-3 hover:text-white cursor-pointer hidden md:block"
+                >
+                  Book Appointmet
+                </button>
+                <i id="menu-icon" class="ri-list-indefinite text-3xl md:hidden cursor-pointer"></i>
+              </div>
+              <div
+                class="nav-bot hidden md:flex items-center justify-center gap-10 text-sm lg:text-base font-semibold py-5 border-b-[.1px] border-gray-600"
+              >
+                <a href="" class="uppercase">service menu</a>
+                <a href="" class="uppercase">book appointment</a>
+                <a href="" class="uppercase">philosopy</a>
+                <a href="" class="uppercase">shop</a>
+                <a href="" class="uppercase">team</a>
+                </div>
+              <div id="mobile-menu" class="mobile-nav hidden absolute top-[80px] left-0 w-full bg-black/80 backdrop-blur-sm p-8 text-center flex-col gap-6">
+                  <a href="" class="uppercase block">service menu</a>
+                  <a href="" class="uppercase block">book appointment</a>
+                  <a href="" class="uppercase block">philosopy</a>
+                  <a href="" class="uppercase block">shop</a>
+                  <button class="bg-white text-black font-semibold uppercase w-full py-3 mt-4">Book Appointmet</button>
+              </div>
+            </nav>
+
+            <div class="homepage-wrapper w-full h-full text-[#d1d1d1] px-4 md:px-8 lg:px-12">
+              <div class="w-full h-[60%] md:h-[50%] relative">
+                <div
+                  class="hero-container absolute top-1/2 left-1/2 w-full md:w-3/4 text-center 
+                  -translate-x-1/2 -translate-y-1/2" /* <-- 3. CORRECTED TRANSLATE CLASS */
+                >
+                  <h1 class="hero-text capitalize text-4xl md:text-6xl/tight"> Relax,endulge,enjoy and love yourself.
+                  </h1>
+                  <div
+                    class="hero-btns text-black mt-8 flex flex-col md:flex-row items-center justify-center gap-4"
+                  >
+                    <button
+                      class="bg-white text-sm md:text-base px-5 py-3 uppercase font-semibold cursor-pointer w-full max-w-xs md:w-auto"
+                    >
+                      BOOK APPOINTMENT
+                    </button>
+                    <button
+                      class="bg-none px-5 text-sm md:text-base py-3 text-white border uppercase font-semibold cursor-pointer hover:bg-white hover:text-black transition duration-200 ease-in-out w-full max-w-xs md:w-auto" /* <-- 3. CORRECTED BORDER CLASS */
+                    >
+                      view service menu
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="service-menu"
+            class="w-full min-h-[60vh] bg-[#f1f1f1] flex gap-2 justify-center items-center flex-col text-center py-10 px-4"
+          >
+            <div class="service-menu-wrapper">
+              <h1 class="text-4xl">Service Menu</h1>
+              <p class="mt-4 max-w-md">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quod!
+                Et aut quis eligendi nostrum?
+              </p>
+              <button
+                class="bg-black text-white text-sm md:text-base px-5 py-3 uppercase font-semibold cursor-pointer mt-6"
+              >
+                VIEW SERVICE MENU
+              </button>
+            </div>
+          </div>
+          <div id="philosopy" class="w-full h-screen bg-[#FFFFFF]">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
